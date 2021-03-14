@@ -1,8 +1,6 @@
-import { useEffect, useState } from 'react'
-
-import '../styles/tasklist.scss'
-
-import { FiTrash, FiCheckSquare } from 'react-icons/fi'
+import { useState } from 'react';
+import { FiCheckSquare, FiTrash } from 'react-icons/fi';
+import '../styles/tasklist.scss';
 
 interface Task {
   id: number;
@@ -22,6 +20,7 @@ export function TaskList() {
         title: newTaskTitle,
         isComplete: false
       }])
+      setNewTaskTitle('')
     }
   }
 
@@ -80,7 +79,11 @@ export function TaskList() {
                 <p>{task.title}</p>
               </div>
 
-              <button type="button" data-testid="remove-task-button" onClick={() => handleRemoveTask(task.id)}>
+              <button 
+                type="button" 
+                data-testid="remove-task-button"
+                onClick={() => handleRemoveTask(task.id)}
+              >
                 <FiTrash size={16}/>
               </button>
             </li>
