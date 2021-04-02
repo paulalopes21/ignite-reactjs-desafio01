@@ -1,6 +1,7 @@
 # Jornada Ignite Rocketseat - Trilha ReactJS
 
-## Desafio 01 - Conceitos do React
+## Chapter I
+### Desafio 01 - Conceitos do React
 
 Aplicação de atividades a fazer, para treinar um pouco mais sobre manipulação do
 estado no React.
